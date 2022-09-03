@@ -1049,4 +1049,7 @@
          screenshot chord -->
     <integer name="config_screenshotChordKeyTimeout">0</integer>
     
+    <!-- Determines whether the shell features all run on another thread. -->
+    <bool name="config_enableShellMainThread">true</bool>
+
 </resources>
