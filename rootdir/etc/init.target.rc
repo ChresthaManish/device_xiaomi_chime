@@ -464,6 +464,11 @@ service panel_color /vendor/bin/panelcolor_bin
 on property:sys.boot_completed=1
     start panel_color
 
+on property:vendor.post_boot.parsed=1
+
+# Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 ########### FTM end ##########
 ########### FTM end ##########
 ########### FTM end ##########
