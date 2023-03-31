@@ -172,6 +172,7 @@ persist.backup.ntpServer=0.pool.ntp.org\
 
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
 
 
 # Graphics
