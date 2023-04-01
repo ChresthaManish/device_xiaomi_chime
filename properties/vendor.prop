@@ -131,6 +131,7 @@ ro.vendor.display.svi=1
 vendor.display.idle_time=0
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+vendor.gralloc.enable_fb_ubwc=1
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
