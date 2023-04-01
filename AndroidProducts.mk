@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_citrus.mk \
-    $(LOCAL_DIR)/aosp_lime.mk
+    $(LOCAL_DIR)/superior_citrus.mk \
+    $(LOCAL_DIR)/superior_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_citrus-user \
-    aosp_citrus-userdebug \
-    aosp_citrus-eng \
-    aosp_lime-user \
-    aosp_lime-userdebug \
-    aosp_lime-eng
+    superior_citrus-user \
+    superior_citrus-userdebug \
+    superior_citrus-eng \
+    superior_lime-user \
+    superior_lime-userdebug \
+    superior_lime-eng

@@ -7,14 +7,16 @@
 # Inherit from citrus device
 $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_USES_AOSP_RECOVERY := true
+# Inherit some common SuperiorOS  stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# SuperiorOS Stuff
+BUILD_WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_citrus
+PRODUCT_NAME := superior_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3
