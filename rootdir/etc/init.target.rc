@@ -101,6 +101,9 @@ on boot
     chown system system /sys/kernel/hbtp/display_pwr
     start rmt_storage
     start rfs_access
+    
+    # default country code
+    setprop ro.boot.wificountrycode 00
 
 #xiong jiangxueqin To realize the communication between framework and thermal, we need to implement sys node in kernel
    chown system system /sys/class/thermal/thermal_message/sconfig
