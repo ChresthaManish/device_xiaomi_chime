@@ -88,6 +88,9 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 # FM
 BOARD_HAVE_QCOM_FM := true
 
+# HAL
+TARGET_HALS_PATH ?= hardware/qcom-caf/$(TARGET_BOARD_PLATFORM)
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/vintf/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
