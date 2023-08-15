@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from miui_LIMEGlobal_V13.0.3.0.SJQMIXM
+# All unpinned blobs below are extracted from miui_LIMEGlobal_V14.0.5.0.SJQMIXM
 
 # ACDB
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb
@@ -995,6 +995,7 @@ vendor/radio/qcril_database/upgrade/40_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/41_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/42_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/43_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/44_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
