@@ -38,7 +38,7 @@ function 8953_sched_dcvs_eas()
         #set the hispeed_freq
         echo 1401600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8953 and sdm450 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
 
@@ -86,7 +86,7 @@ function 8953_sched_dcvs_eas()
         #set the hispeed_freq
         echo 1401600 > /sys/devices/system/cpu/cpufreq/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8953 and sdm450 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpufreq/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpufreq/schedutil/hispeed_load
 
         echo 652800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
@@ -104,7 +104,7 @@ function 8917_sched_dcvs_eas()
         #set the hispeed_freq
         echo 1094400 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8917 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
 
@@ -139,7 +139,7 @@ function 8917_sched_dcvs_eas()
         #set the hispeed_freq
         echo 1094400 > /sys/devices/system/cpu/cpufreq/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8917 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpufreq/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpufreq/schedutil/hispeed_load
 
         echo 960000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
     fi
@@ -162,7 +162,7 @@ function 8937_sched_dcvs_eas()
         #set the hispeed_freq
         echo 1094400 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8937 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_load
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
 
@@ -174,7 +174,7 @@ function 8937_sched_dcvs_eas()
         #set the hispeed_freq
         echo 768000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8937 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_load
         echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
         echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq
 
@@ -213,7 +213,7 @@ function 8937_sched_dcvs_eas()
         #set the hispeed_freq
         echo 1094400 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8937 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
         ## enable governor for power cluster
         echo 1 > /sys/devices/system/cpu/cpu4/online
         echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
@@ -222,7 +222,7 @@ function 8937_sched_dcvs_eas()
         #set the hispeed_freq
         echo 768000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
         #default value for hispeed_load is 90, for 8937 it should be 85
-        echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
 
         echo 960000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
         echo 768000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
@@ -471,7 +471,7 @@ function 8953_sched_dcvs_hmp()
     echo 1 > /sys/devices/system/cpu/cpu0/online
     echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
     echo "19000 1401600:39000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
-    echo 85 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
     echo 20000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     echo 1401600 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
     echo 0 > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
@@ -513,7 +513,7 @@ function 8917_sched_dcvs_hmp()
     echo 1 > /sys/devices/system/cpu/cpu0/online
     echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
     echo "19000 1094400:39000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
-    echo 85 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
     echo 20000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     echo 1094400 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
     echo 0 > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
@@ -565,7 +565,7 @@ function 8937_sched_dcvs_hmp()
     echo 1 > /sys/devices/system/cpu/cpu0/online
     echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
     echo "19000 1094400:39000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
-    echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
     echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
     echo 1094400 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
     echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
@@ -756,8 +756,8 @@ function sdm660_sched_schedutil_dcvs() {
     echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
     echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
     echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-    echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-    echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
 
     # Enable bus-dcvs
     for device in /sys/devices/platform/soc
@@ -1699,7 +1699,7 @@ case "$target" in
                 echo 1 > /sys/devices/system/cpu/cpu0/online
                 echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
                 echo "20000 1113600:50000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
-                echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+                echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
                 echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
                 echo 1113600 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
                 echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
@@ -1806,7 +1806,7 @@ case "$target" in
                 echo 1 > /sys/devices/system/cpu/cpu0/online
                 echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
                 echo "19000 1113600:39000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
-                echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+                echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
                 echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
                 echo 1113600 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
                 echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
@@ -1970,7 +1970,7 @@ case "$target" in
                 echo 1 > /sys/devices/system/cpu/cpu0/online
                 echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
                 echo "19000 1113600:39000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
-                echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+                echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
                 echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
                 echo 1113600 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
                 echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
@@ -2134,7 +2134,7 @@ case "$target" in
                 # enable governor for perf cluster
                 echo 1 > /sys/devices/system/cpu/cpu4/online
                 echo "interactive" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-                echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
+                echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
                 echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
                 echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
                 echo 40000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time
@@ -2523,7 +2523,7 @@ case "$target" in
             echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
             echo 1363200 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
             #default value for hispeed_load is 90, for sdm632 it should be 85
-            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
             # sched_load_boost as -6 is equivalent to target load as 85.
             echo -6 > /sys/devices/system/cpu/cpu0/sched_load_boost
             echo -6 > /sys/devices/system/cpu/cpu1/sched_load_boost
@@ -2537,7 +2537,7 @@ case "$target" in
             echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
             echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
             #default value for hispeed_load is 90, for sdm632 it should be 85
-            echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
             # sched_load_boost as -6 is equivalent to target load as 85.
             echo -6 >  /sys/devices/system/cpu/cpu4/sched_load_boost
             echo -6 > /sys/devices/system/cpu/cpu5/sched_load_boost
@@ -2903,7 +2903,7 @@ case "$target" in
 
                          #set the hispeed_freq
                          echo 998400 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
-                         echo 85 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_load
+                         echo 90 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_load
                          echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
                          echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq
                          echo 768000 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
@@ -2926,7 +2926,7 @@ case "$target" in
 
                          #set the hispeed_freq
                          echo 998400 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
-                         echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+                         echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
                          echo 768000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
                      fi
 
@@ -3207,7 +3207,7 @@ case "$target" in
             echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
             echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif
             echo "19000 1344000:39000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
-            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
             echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
             echo 1344000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
             echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
@@ -3224,7 +3224,7 @@ case "$target" in
             echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
             echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_migration_notif
             echo "19000 1094400:39000" > /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay
-            echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
             echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
             echo 1094400 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
             echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
@@ -3377,7 +3377,7 @@ case "$target" in
       # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
       echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
       echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-      echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+      echo 90 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
       echo "0:1209600" > /sys/module/cpu_boost/parameters/input_boost_freq
       echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
@@ -3506,8 +3506,8 @@ case "$target" in
             echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
             echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
             echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-            echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
 
             # Set Memory parameters
             configure_memory_parameters
@@ -3638,7 +3638,7 @@ case "$target" in
       # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
       echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
       echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-      echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+      echo 90 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
       echo "0:1209600" > /sys/module/cpu_boost/parameters/input_boost_freq
       echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
@@ -3739,7 +3739,7 @@ case "$target" in
             # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
             echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
             echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-            echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
             echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
             echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
@@ -3868,7 +3868,7 @@ case "$target" in
         echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us
         echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us
         echo 1228800 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_freq
-        echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
         echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
         echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/pl
         echo 672000 > /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq
@@ -3879,7 +3879,7 @@ case "$target" in
         echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
         echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
         echo 1228800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
-        echo 85 > /sys/devices/system/cpu/cpu7/cpufreq/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpu7/cpufreq/schedutil/hispeed_load
         echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
         echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
         echo 672000 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
@@ -4048,7 +4048,7 @@ case "$target" in
         # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
         echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
         echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-        echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+        echo 90 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
         # Enable conservative pl
         echo 1 > /proc/sys/kernel/sched_conservative_pl
@@ -4209,8 +4209,8 @@ case "$target" in
             echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
             echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
             echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-            echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
 
             # Set Memory parameters
             configure_memory_parameters
@@ -4319,8 +4319,8 @@ case "$target" in
             echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
             echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
             echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-            echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
 
             # Set Memory parameters
             configure_memory_parameters
@@ -4390,7 +4390,7 @@ case "$target" in
             echo -6 > /sys/devices/system/cpu/cpu1/sched_load_boost
             echo -6 > /sys/devices/system/cpu/cpu2/sched_load_boost
             echo -6 > /sys/devices/system/cpu/cpu3/sched_load_boost
-            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+            echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
 
             # Set Memory parameters
             configure_memory_parameters
@@ -4485,7 +4485,7 @@ case "$target" in
     # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
     echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
     echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-    echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
     echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
     echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
